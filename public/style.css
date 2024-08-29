@@ -1,3 +1,31 @@
+nav {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,8 +34,8 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    padding-top: 60px; /* Adjust for fixed nav height */
 }
-
 .container {
     text-align: center;
     background: white;
@@ -15,14 +43,12 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
 }
-
 button {
     padding: 10px 20px;
     border: none;
@@ -31,13 +57,20 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0056b3;
 }
-
 #joke {
     margin-top: 20px;
     font-size: 1.2em;
     font-weight: bold;
+}
+#about {
+    display: none; /* Initially hidden */
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
